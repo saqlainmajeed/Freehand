@@ -1,0 +1,38 @@
+
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+
+    @media only screen and (max-width: 900px){
+        font-size: 9px;
+    }
+
+    @media only screen and (max-width: 600px){
+        font-size: 8px;
+    }
+
+    @media only screen and (max-width: 410px){
+        font-size: 7px;
+    }
+
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto !important; 
+}

@@ -1,0 +1,41 @@
+//-------------------------------------------.//
+// ---------EVERY SECTION MAIN HEADING--------//
+//-------------------------------------------.//
+
+.main-heading{
+    font-size: 4rem;
+    letter-spacing: .02rem;
+    color: black;
+    font-weight: 400;
+}
+
+//-------------------------------------------.//
+// ---------EVERY SECTION SMALL HEADING--------//
+//-------------------------------------------.//
+
+.light-heading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #7690A8;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+
+    @media only screen and (max-width: 375px){
+        margin-bottom: 0.5rem;
+    }
+}
+
+//-------------------------------------------.//
+// ---------EVERY SECTION SMALL PARAGRAPH--------//
+//-------------------------------------------.//
+
+.small-paragraph{
+    line-height: 1.6;
+    margin-bottom: 6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+
+    @media only screen and (max-width: 375px){
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,103 @@
+.hero {
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+
+    @media only screen and (max-width: 600px){
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+    .hero__text{
+        width: 80%;
+    }
+
+    .hero__heading{
+        line-height: 1.1;
+        font-size: 5.6rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+
+        @media only screen and (max-width: 900px){
+            font-size: 3.5rem;
+        }
+    }
+
+    .hero__paragraph{
+        padding-left: 1rem;
+        line-height: 1.6;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+
+        @media only screen and (max-width: 900px){
+            margin-bottom: 3rem;
+        }
+
+    }
+
+    .btn-ghost,
+    .btn-full{
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding: .5rem 2rem;
+        border: .2rem solid #007FFC;
+        border-radius: .5rem;
+        margin-left: 1rem;
+    }
+
+    .btn-ghost{
+        color: #007FFC;
+        transition: all .3s;
+        
+        &:hover{
+            color: #fff;
+            background-color: #007FFC;
+            box-shadow: 0 .5rem 1rem rgba(black, .2);
+            transform: translateY(-1.04rem);
+        }
+    }
+
+    .btn-full{
+        color: #fff;
+        background-color: #007FFC;
+        transition: all .3s;
+
+        &:hover{
+            box-shadow: 0 .5rem 1rem rgba(black, .2);
+        }
+    }
+
+    .hero__photo{
+        width: 100%;
+    }
+
+    .hero__img{
+        position: relative;
+
+        .img__previous,
+        .img__next{
+            fill: white;
+            border-radius: .2rem;
+            background-color: #16133D;
+
+        }
+
+        .img__previous{
+            position: absolute;
+            top: 40%;
+            left: -2rem;
+            transform: rotate(180deg) scale(1.5);
+        }
+
+        .img__next{
+            position: absolute;
+            top: 40%;
+            right: -2rem;
+            transform: scale(1.5);
+        }
+    }
+}
